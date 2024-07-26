@@ -1,0 +1,122 @@
+    
+  
+    
+    .bharat{
+
+    color: lime;
+    font-weight: 800;
+    font-family: "Playwrite US Trad", cursive;
+}
+.nihal{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hero{
+   
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero img {
+    margin-top: 150px;
+    box-shadow: rgba(4, 4, 130, 0.601) 0px 50px 100px -20px, rgba(98, 21, 4, 0.705) 0px 30px 60px -30px;
+    
+    
+}
+.hero h1{
+
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+  .spanh1{
+    background: linear-gradient(to right top, #ed0a0a, #ed6300, #e19700, #cac300, #a8eb12);
+    background-clip:text ;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.contact{
+position: relative;
+top: 30px;
+    padding: 25px 45px;
+     background: linear-gradient(to right top, #ed0a0a, #ed6300, #e19700, #cac300, #a8eb12); 
+    border-radius: 50px;
+    cursor: pointer;
+}
+.resume-download{
+    position: relative;
+    top: 30px;
+    padding: 25px 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer; 
+}
+.contact:hover{
+
+    border: 2px solid white;
+}
+.resume-download:hover{
+    border:2px solid #ed6300;
+    
+}
+@media (max-width:768px) {
+    
+    .nihal{
+
+        margin-top: 100px;
+        width: 260px;
+        height: 260px;
+    }
+    .hero img {
+        margin-top: 100px;
+    }
+    .hero h1{
+margin-top: 50PX;
+        width: 90%;
+        font-size: 50PX;
+
+    }
+    .hero P{
+        width: 60%;
+        line-height: 32pX;
+        font-size: 18pX;
+        margin: 10px 0px;
+    }
+    .hero-action{
+
+        font-size: 18px;
+        gap: 16px;
+        margin-bottom: 50px;
+        font-weight: 500;
+    }
+    .contact{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .resume-download{
+        padding: 18px 30px;
+        border-radius: 40px;
+    }
+}

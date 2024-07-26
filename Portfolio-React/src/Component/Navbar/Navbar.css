@@ -1,0 +1,96 @@
+
+
+
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 20px 170px;
+font-family: "Outfit", sans-serif;
+
+}
+.navbar img{
+
+   height: 10vh;
+   width: 10vw;
+   
+  
+}
+
+.nav-menu{
+display: flex;
+align-items: center;
+list-style: none;
+gap: 60px;
+font-size: 20px;
+}
+.contact-btn{
+
+   padding: 20px 50px;
+   border-radius: 50px;
+   background: linear-gradient(to right top, #ed0a0a, #ed6300, #e19700, #cac300, #a8eb12);
+}
+.contact-btn:hover{
+transform : scale(1.05)
+}
+.navbar h1{
+   font-size: 1vw;
+   background: linear-gradient(to right top, #ed0a0a, #ed6300, #e19700, #cac300, #a8eb12);
+   background-clip:text ;
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 900;
+}
+.nav-menu img{
+   height: 9px;
+   width: 38px;
+}
+.anchor-link{
+   text-decoration: none;
+}
+.nav-mob-open{
+   display: none;
+}
+.nav-mob-close{
+   display: none;
+}
+
+@media(max-width:760px) {
+   .navbar{
+
+      margin: 20px 50px;
+   }
+   .contact-btn{
+      display: none;
+   }
+   .nav-mob-open{
+      position: fixed;
+      display: block;
+      right: 30px;
+   }
+   .nav-mob-close{
+      display: block;
+      top: 30px;
+      left: 290px;
+     
+      width: 30px;
+     
+
+   }
+   .nav-menu{
+flex-direction: column;
+position: fixed;
+align-items: start;
+top: 0;
+gap: 30px;
+background-color: #009EFF;
+width: 300px;
+height: 100%;
+z-index: 2;
+width: -300px;
+
+transition: right 0.3s;
+
+   }
+   
+}

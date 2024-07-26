@@ -1,0 +1,104 @@
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 170px;
+    gap: 80px;
+    font-family: "Outfit", sans-serif;
+}
+.service-title{
+    position: relative;
+}
+.service-title h1{
+    padding:  0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.service-title img{
+    top: -110px;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+}
+.service-formate{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.service-formate h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.service-formate h3{
+font-size: 30px;
+font-weight: 800;
+background: linear-gradient(to right top, #ed0a0a, #ed6300, #e19700, #cac300, #a8eb12 );
+background-clip:text ;
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+}
+.service-formate h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.service-formate:hover{
+
+    transform: scale(1.05);
+    
+    transition: 0.3s;
+    background-image: linear-gradient(to right top, #d91212, #712c0f, #9f6200, #b5a300, #a8eb12);
+}
+
+
+
+@media(max-width:768px) {
+    .service{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    .service-title h1{
+        padding: 0%;
+        font-size: 50px;
+
+    }
+    .service-title img{
+        width: 130px;
+        right: -20px;
+        top: 15px;
+    }
+    .service-formate{
+        gap: 20px;
+        padding: 32px;
+    }
+    .service-formate h2{
+font-size: 28px;
+    }
+    .service-formate p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .service-readmore img{
+
+width: 20px;
+    }
+    .service-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
